@@ -2,7 +2,7 @@
   "name": "wasif",
   "version": "0.0.0",
   "private": true,
-  "homepage": "https://thanseer02.github.io/portfolio_Sreejith",
+  "homepage": "https://thanseer02.github.io/portfolio_wazif",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
