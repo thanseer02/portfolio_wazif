@@ -1,18 +1,18 @@
 :root {
   /* Color System */
-  --c-bg: #F5F3EE;
-  --c-ink: #14161A;
-  --c-body: #54585F;
+  --c-bg: #111214;
+  --c-ink: #F5F3EE;
+  --c-body: #A0A5AF;
   --c-accent: #C4661F;
   --c-accent-hover: #E08A3E;
-  --c-tile-bg: #FFFFFF;
+  --c-tile-bg: #16181C;
   
   /* Structure */
-  --grid-line: rgba(17, 18, 20, 0.08);
+  --grid-line: rgba(255, 255, 255, 0.03);
   --shadow-offset: 2px;
   --shadow-hover: 4px;
-  --shadow-color: rgba(17, 18, 20, 0.08);
-  --border-color: rgba(17, 18, 20, 0.15);
+  --shadow-color: rgba(0, 0, 0, 0.6);
+  --border-color: rgba(255, 255, 255, 0.1);
 
   /* Fonts */
   --font-heading: 'Space Grotesk', sans-serif;
