@@ -1,18 +1,18 @@
 :root {
   /* Color System */
-  --c-bg: #111214;
-  --c-ink: #F5F3EE;
-  --c-body: #A0A5AF;
-  --c-accent: #C4661F;
-  --c-accent-hover: #E08A3E;
-  --c-tile-bg: #16181C;
+  --c-bg: #0A0E1A;
+  --c-ink: #F8FAFC;
+  --c-body: #94A3B8;
+  --c-accent: #3B82F6;
+  --c-accent-hover: #60A5FA;
+  --c-tile-bg: #111827;
   
   /* Structure */
-  --grid-line: rgba(255, 255, 255, 0.03);
-  --shadow-offset: 2px;
-  --shadow-hover: 4px;
-  --shadow-color: rgba(0, 0, 0, 0.6);
-  --border-color: rgba(255, 255, 255, 0.1);
+  --grid-line: rgba(59, 130, 246, 0.05);
+  --shadow-offset: 4px;
+  --shadow-hover: 12px;
+  --shadow-color: rgba(59, 130, 246, 0.15);
+  --border-color: rgba(255, 255, 255, 0.08);
 
   /* Fonts */
   --font-heading: 'Space Grotesk', sans-serif;
@@ -146,18 +146,20 @@ h1, h2, h3, h4 {
 .blueprint-tile {
   background-color: var(--c-tile-bg);
   border: 1px solid var(--border-color);
-  box-shadow: var(--shadow-offset) var(--shadow-offset) 0px var(--shadow-color);
+  box-shadow: 0px 4px var(--shadow-hover) var(--shadow-color);
+  border-radius: 12px;
   padding: var(--p-lg);
   position: relative;
-  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
   overflow: hidden;
   outline: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .blueprint-tile:hover, .blueprint-tile:focus-visible {
-    transform: translate(-1px, -1px);
-    box-shadow: var(--shadow-hover) var(--shadow-hover) 0px var(--shadow-color);
+    transform: translateY(-4px);
+    box-shadow: 0px 12px 24px var(--shadow-color);
+    border-color: rgba(59, 130, 246, 0.3);
   }
 }
 
